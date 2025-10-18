@@ -16,5 +16,3 @@ This project demonstrates how to build a clean and modular Flask backend using *
 - 🔄 **Token-based access and route protection**
 
 ---
-
-## 🗂️ Project Structure
