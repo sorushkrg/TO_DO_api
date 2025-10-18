@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Task</title>
+    <link href="../assets/bootstrap/bootstrap.css" rel="stylesheet">
+    <script src="../assets/flatpicker/flatpickr.js"></script>
+    <link href="../assets/flatpicker/flatpickr.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">Task Management</a>
+        <div id="logout" class="d-none">
+            <a href="../index.html" id="log" class="btn btn-light btn-sm">Logout</a>
+        </div>
+    </div>
+</nav>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="text-center mb-4">Create Task</h2>
+            <form method="POST" id="createForm" class="card p-4 shadow-sm">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Task Title</label>
+                    <input type="text" class="form-control" id="title" name="title" maxlength="50">
+                    <span id="titleEr" class="text-danger"></span>
+
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea class="form-control" id="description" name="description" rows="4"></textarea>
+                    <span id="descriptionEr" class="text-danger"></span>
+
+                </div>
+                <div class="mb-3">
+                    <label for="due_date" class="form-label">Due_date</label>
+                    <input type="datetime-local" class="form-control" id="due_date" name="due_date"
+                           placeholder="YYYY-MM-DD HH:mm">
+                    <span id="due_dateEr" class="text-danger"></span>
+
+                </div>
+
+                <button type="submit" class="btn btn-success w-100">Create Task</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/bootstrap/bootstrap.bundle.js"></script>
+<script src="assets/create.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

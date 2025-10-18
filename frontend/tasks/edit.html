@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+    <link href="../assets/bootstrap/bootstrap.css" rel="stylesheet">
+    <script src="../assets/flatpicker/flatpickr.js"></script>
+    <link href="../assets/flatpicker/flatpickr.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">Task Management</a>
+        <div id="logout" class="d-none">
+            <a href="../index.html" id="log" class="btn btn-light btn-sm">Logout</a>
+        </div>
+    </div>
+</nav>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="text-center mb-4">Edit Task</h2>
+            <form id="editForm" class="card p-4 shadow-sm">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Task Title</label>
+                    <input type="text" class="form-control" id="title" name="title" value="Example Task" maxlength="50"
+                    >
+                    <span id="titleEr" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea class="form-control" id="description" name="description" rows="4"></textarea>
+                    <span id="descriptionEr" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="status" class="form-label">Status</label>
+                    <select class="form-select" id="status" name="status">
+                        <option value="0">Pending</option>
+                        <option value="1">Completed</option>
+                        <option value="2">Canceled</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="due_date" class="form-label">Deadline</label>
+                    <input type="datetime-local" class="form-control" id="due_date" name="due_date">
+                    <span id="due_dateEr" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Update Task</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="../assets/bootstrap/bootstrap.bundle.js"></script>
+<script src="assets/edit.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>
