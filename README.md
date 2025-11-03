@@ -1,6 +1,6 @@
-# 🧩 Flask Task Management System (API-Based)
+# 🧩 Flask TO_DO System (API-Based)
 
-A modular **Task Management** web application built with **Flask RESTful API** and a simple **HTML/JS/CSS frontend**.  
+A modular **TO_DO** web application built with **Flask RESTful API** and a simple **HTML/JS/CSS frontend**.  
 This project demonstrates a complete backend setup using **JWT authentication**, **PostgreSQL (SQLAlchemy ORM)**, and **Marshmallow serialization** — combined with a clean, interactive frontend.
 
 ---
